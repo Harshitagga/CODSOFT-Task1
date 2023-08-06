@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        *{padding: 0%; margin: 0%;box-sizing:border-box;}
+
+        header {
+           
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            font-family: sans-serif;
+            background: url(pngtree-note-music-logo-watercolor-background-picture-image_1589075.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            width: 100%;
+            height: 100px;
+            color:white;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+        .menu a{
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid rgb(13, 2, 51);
+            transition: 0.4s linear;
+        }
+        .menu a:hover::before{
+            width: 90%;
+        }
+        .register a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: rgb(66, 16, 230);
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .register a:hover{
+            background:#930505;
+            border: 1px solid rgb(27, 7, 137);
+        }
+    .h-txt{
+        max-width: 650px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: rgb(6, 5, 5);
+    }
+    .h-txt span{
+        letter-spacing: 5px;
+    }
+    .h-txt h1{
+        font-size: 3.5em;
+
+    }
+    .h-txt a{
+        text-decoration: none;
+        background: rgb(48, 16, 162);
+        color: white;
+        padding: 10px 20px;
+        letter-spacing: 5px;
+        transition: 0.4s;
+    }
+    .h-txt a:hover{
+        background:#911414;
+            border: 1px solid rgb(121, 115, 160);
+    }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 38%;
+            width: 100%;
+
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Music.</div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Your favourite</a>
+            <a href="#">Trending Songs</a>
+            <a href="#">Categories</a>
+            <a href="#">Contact</a></div>
+      
+   <div class="register">
+    <a href="#">Register</a>
+   </div>
+        </nav>
+        <section class="h-txt">
+            <span>
+                Enjoy
+            </span>
+            <h1>Nonstop playlist</h1>
+            <br>
+            <a href="#">Play</a>
+        </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Music. All rights reserved.</p>
+    </footer>
+</body>
+</html>
